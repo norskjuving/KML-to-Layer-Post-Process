@@ -36,7 +36,7 @@ def postProcess(featureClass,htmlField,outWorkspace,outFC,UID_field):
     UID_list = UID_list.tolist()
 
     #Create new feature class to dissolve stacked geometries/insert HTML attributes
-##    arcpy.CreateFeatureclass_management(outWorkspace,outFC,desc.shapeType.upper(),featureClass,"DISABLED","DISABLED",desc.spatialReference)
+    arcpy.CreateFeatureclass_management(outWorkspace,outFC,desc.shapeType.upper(),featureClass,"DISABLED","DISABLED",desc.spatialReference)
     new_fc = os.path.join(outWorkspace,outFC)
 
     #get the unique field names from the HTML fields of the first UID in UID_list
@@ -54,29 +54,35 @@ def postProcess(featureClass,htmlField,outWorkspace,outFC,UID_field):
 
 
     #retrieve geometries from original KML feature class
-
-    #where = """ {0} = '{1}' """.format(arcpy.AddFieldDelimiters(featureClass,fields[0]),UID_list)
     currentUID = ''
 
+    #Generates unique geometries in new feature class
     with arcpy.da.InsertCursor(new_fc,["SHAPE@",UID_field]) as i_cursor:
-        for s_row in arcpy.da.SearchCursor(featureClass,["SHAPE@",UID_field],where):
+        for s_row in arcpy.da.SearchCursor(featureClass,["SHAPE@",UID_field],"","",sql_clause=(None, 'ORDER BY ' + UID_field + ' ASC')):
             if s_row[1] != currentUID:
-                print currentUID
-                print s_row[1]
+                currentUID = s_row[1]
+                i_cursor.insertRow(s_row)
+    del i_cursor
+
+    new_fields_list.insert(0,UID_field)
 
 
+    #Populate attribute fields with Data contained in HTML block
+    with arcpy.da.UpdateCursor(new_fc,new_fields_list) as u_cursor:
+        for u_row in u_cursor:
+            for s_row in arcpy.da.SearchCursor(featureClass,fields,"","",sql_clause=(None, 'ORDER BY ' + fields[0] + ' ASC')):
+                if s_row[0] == u_row[0]:
+                    soup = BeautifulSoup(s_row[1])
+                    elements = soup.findAll('td',text=True)
+                    fieldName = (elements[3].text).replace(" ","_")
+                    value = elements[4].text
+                    field_index = new_fields_list.index(fieldName)
 
+##                    print "Field Name: {0}, Field Value: {1}, Field Index: {2}".format(fieldName,value,fieldIndex)
+                    u_row[field_index] = value
+                    u_cursor.updateRow(u_row)
 
-
-
-
-
-
-
-
-
-
-
+    del u_cursor
 
 
 
