@@ -26,9 +26,16 @@ def postProcess(featureClass,htmlField,outWorkspace,outFC,UID_field):
 
     desc = arcpy.Describe(featureClass)
 
+##    wkspDesc = arcpy.Describe(arcpy.env.workspace)
+##
+##    if wkspDesc.workspaceType == "FileSystem":
+##       outFC = outFC + ".shp"
+
     new_fc = os.path.join(outWorkspace,outFC)
 
     fields = [UID_field, htmlField]
+
+
 
     #Create list of unique field values for UID_field variable
     UID_list = arcpy.da.TableToNumPyArray(featureClass,UID_field)
@@ -77,26 +84,23 @@ def postProcess(featureClass,htmlField,outWorkspace,outFC,UID_field):
                     fieldName = (elements[3].text).replace(" ","_")
                     value = elements[4].text
                     field_index = new_fields_list.index(fieldName)
-
-##                    print "Field Name: {0}, Field Value: {1}, Field Index: {2}".format(fieldName,value,fieldIndex)
                     u_row[field_index] = value
                     u_cursor.updateRow(u_row)
 
     del u_cursor
 
 
-
 if __name__ == "__main__":
 
     # Gather inputs
-##    featureClass = arcpy.GetParameterAsText(0)
-##    htmlField = arcpy.GetParameterAsText(1)
-##    outWorkspace = arcpy.GetParameterAsText(2)
-##    outFC = arcpy.GetParameterAsText(3)
-##    UID_field = arcpy.GetParameterAsText(4)
-    featureClass = r"D:\SIDE_PROJECTS\K_26_Mississauga_GF_Wardv3.gdb\Placemarks\Polygons"
-    htmlField = "PopupInfo"
-    outWorkspace= r"D:\SIDE_PROJECTS\K_26_Mississauga_GF_Wardv3.gdb"
-    outFC = "test"
-    UID_field = "Name"
+    featureClass = arcpy.GetParameterAsText(0)
+    htmlField = arcpy.GetParameterAsText(1)
+    outWorkspace = arcpy.GetParameterAsText(2)
+    outFC = arcpy.GetParameterAsText(3)
+    UID_field = arcpy.GetParameterAsText(4)
+##    featureClass = r"D:\SIDE_PROJECTS\K_26_Mississauga_GF_Wardv3.gdb\Placemarks\Polygons"
+##    htmlField = "PopupInfo"
+##    outWorkspace= r"D:\SIDE_PROJECTS\K_26_Mississauga_GF_Wardv3.gdb"
+##    outFC = "test"
+##    UID_field = "Name"
     postProcess(featureClass,htmlField,outWorkspace,outFC,UID_field)
