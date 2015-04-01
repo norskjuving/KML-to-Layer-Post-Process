@@ -23,7 +23,7 @@ Figure 1:
  
 <b>STEP 2 - INSTALL PIP</b>
 
-Run the script in commandline as seen in figure 2, keep in mind that you must change the path to the location of the get-pip.py script, in our case it should be the desktop (Figure 2). When you run 'python get-pip.py' command as seen in figure 2, pip should install and the result should look like figure 3. If you receive an error <b>"'python' is not recognized as an internal or external command, operable program or batch file."</b>  the python environment variable is not set on your system (tells your computer where python is). See STEP 3 (optional) below figure 3 for adding this.
+Run the script in commandline as seen in figure 2, keep in mind that you must change the path to the location of the get-pip.py script, in our case it should be the desktop (Figure 2). When you run 'python get-pip.py' command as seen in figure 2, pip should install and the result should look like figure 3. If you receive an error <b>"'python' is not recognized as an internal or external command, operable program or batch file."</b>  the python environment variable is not set on your system (tells your computer where python is). See STEP 3 (optional) below figure 3 for adding this. Otherwise skip to <b>STEP 4</b>.
 
 Figure 2:
 
