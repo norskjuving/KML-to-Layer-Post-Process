@@ -64,7 +64,6 @@ def postProcess(featureClass,htmlField,outWorkspace,outFC,UID_field):
             arcpy.AddField_management(new_fc,fieldName, field_type='TEXT')
 
 
-
         #Create a temporary dissolved feature class to retrieve geometries
         #This step is necessary when two features have the same UID (ran into this case with 1 test dataset)
         aggregateGeom = arcpy.Dissolve_management(featureClass,"_dissolve",["Shape_Area",UID_field],"","SINGLE_PART","DISSOLVE_LINES")
