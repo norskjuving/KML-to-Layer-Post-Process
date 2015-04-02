@@ -35,7 +35,7 @@ Figure 3:
 
 <b>STEP 3 (optional) - SET PYTHON ENVIRONMENT VARIABLES</b>
 
-Navigate to Start > Right-click Computer > Properties > Advanced System Settings > Environment Variables. This will open the dialogue seen in figure 4 called "Environment Variables". Scrool down the 'System variables' list to the 'Path' variable (circled in red) select it and click it. In the "Variable Value" text box got the the very end of the string and add in 
+Navigate to Start > Right-click Computer > Properties > Advanced System Settings > Environment Variables. This will open the dialogue seen in figure 4 called "Environment Variables". Scroll down the 'System variables' list to the 'Path' variable (circled in red) select it and click it. In the "Variable Value" text box got the the very end of the string and add in 
 
 ;C:\Python27\ArcGIS10.3;C:\Python27\ArcGIS10.3\Scripts        
 
