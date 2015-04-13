@@ -1,7 +1,8 @@
-*[Step 1 - DOWNLOAD THE PIP INSTALLER](https://github.com/cameronezzi/KML-to-Layer-Post-Process/blob/master/docs_images/bs4_install.md#step-4---install-beautiful-soup)
-*[Step 2 - INSTALL PIP](https://github.com/cameronezzi/KML-to-Layer-Post-Process/blob/master/docs_images/bs4_install.md#step-2---install-pip)
-*[Step 3  - SET PYTHON ENVIRONMENT VARIABLES (Optional)](https://github.com/cameronezzi/KML-to-Layer-Post-Process/blob/master/docs_images/bs4_install.md#step-3---set-python-environment-variables)
-*[Step 4 - INSTALL BEAUTIFUL SOUP](https://github.com/cameronezzi/KML-to-Layer-Post-Process/blob/master/docs_images/bs4_install.md#step-3---install-beautiful-soup)
+- [Step 1 - DOWNLOAD THE PIP INSTALLER](https://github.com/cameronezzi/KML-to-Layer-Post-Process/blob/master/docs_images/bs4_install.md#step-4---install-beautiful-soup)
+- [Step 2 - INSTALL PIP](https://github.com/cameronezzi/KML-to-Layer-Post-Process/blob/master/docs_images/bs4_install.md#step-2---install-pip)
+- [Step 3  - SET PYTHON ENVIRONMENT VARIABLES (Optional)](https://github.com/cameronezzi/KML-to-Layer-Post-Process/blob/master/docs_images/bs4_install.md#step-3---set-python-environment-variables)
+- [Step 4 - INSTALL BEAUTIFUL SOUP](https://github.com/cameronezzi/KML-to-Layer-Post-Process/blob/master/docs_images/bs4_install.md#step-3---install-beautiful-soup)
+
 ##STEP 1 - DOWNLOAD PIP INSTALLER
 
 Use the Python Package Index (better known as pip) to install beautiful soup. If you do not have pip installed navigate to
@@ -13,7 +14,7 @@ Figure 1:
  
 ###STEP 2 - INSTALL PIP
 
-Run the script in commandline as seen in figure 2, keep in mind that you must change the path to the location of the get-pip.py script, in our case it should be the desktop (Figure 2). When you run 'python get-pip.py' command as seen in figure 2, pip should install and the result should look like figure 3. If you receive an error <b>"'python' is not recognized as an internal or external command, operable program or batch file."</b>  the python environment variable is not set on your system (tells your computer where python is). See STEP 3 (optional) below figure 3 for adding this. Otherwise skip to <b>STEP 4</b>.
+Run the script in commandline as seen in figure 2, keep in mind that you must change the path to the location of the get-pip.py script, in our case it should be the desktop (Figure 2). When you run 'python get-pip.py' command as seen in figure 2, pip should install and the result should look like figure 3. If you receive an error <b>"'python' is not recognized as an internal or external command, operable program or batch file."</b>  the python environment variable is not set on your system (tells your computer where python is). See [STEP 3](https://github.com/cameronezzi/KML-to-Layer-Post-Process/blob/master/docs_images/bs4_install.md#step-3---set-python-environment-variables) (optional) below figure 3 for adding this. Otherwise skip to [STEP 4](https://github.com/cameronezzi/KML-to-Layer-Post-Process/blob/master/docs_images/bs4_install.md#step-3---install-beautiful-soup).
 
 Figure 2:
 
@@ -48,3 +49,5 @@ Figure 4:
  and you should see the result in figure 5. Congratulations, you have installed Beautiful Soup 4!
  
   ![Alt text](/../master/docs_images/commandline3.png?raw=true)
+  
+  [Back to Repository](https://github.com/cameronezzi/KML-to-Layer-Post-Process/blob/master)
