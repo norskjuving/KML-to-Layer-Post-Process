@@ -1,4 +1,7 @@
-[Step4](https://github.com/cameronezzi/KML-to-Layer-Post-Process/blob/master/docs_images/bs4_install.md#step-4---install-beautiful-soup)
+*[Step 1 - DOWNLOAD THE PIP INSTALLER](https://github.com/cameronezzi/KML-to-Layer-Post-Process/blob/master/docs_images/bs4_install.md#step-4---install-beautiful-soup)
+*[Step 2 - INSTALL PIP]
+*[Step 3  - SET PYTHON ENVIRONMENT VARIABLES (Optional)]
+*[Step 4 - INSTALL BEAUTIFUL SOUP]
 ##STEP 1 - DOWNLOAD PIP INSTALLER
 
 Use the Python Package Index (better known as pip) to install beautiful soup. If you do not have pip installed navigate to
@@ -20,7 +23,7 @@ Figure 3:
 
  ![Alt text](/../master/docs_images/commandline2.png?raw=true "Install link")
 
-###STEP 3 (optional) - SET PYTHON ENVIRONMENT VARIABLES[link]
+###STEP 3 (optional) - SET PYTHON ENVIRONMENT VARIABLES
 
 Navigate to Start > Right-click Computer > Properties > Advanced System Settings > Environment Variables. This will open the dialogue seen in figure 4 called "Environment Variables". Scroll down the 'System variables' list to the 'Path' variable (circled in red) select it and click it. In the "Variable Value" text box got the the very end of the string and add in 
 
