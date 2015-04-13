@@ -1,4 +1,7 @@
+
 # KML-to-Layer-Post-Process
+
+[How To](https://github.com/cameronezzi/KML-to-Layer-Post-Process#how-to) | [Results]
 
 ArcPy script to process feature class attribute fields containing HTML.
 
