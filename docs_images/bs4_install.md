@@ -1,3 +1,4 @@
+[Step4](https://github.com/cameronezzi/KML-to-Layer-Post-Process/blob/master/docs_images/bs4_install.md#step-4---install-beautiful-soup)
 ##STEP 1 - DOWNLOAD PIP INSTALLER
 
 Use the Python Package Index (better known as pip) to install beautiful soup. If you do not have pip installed navigate to
