@@ -1,4 +1,4 @@
-- [Step 1 - DOWNLOAD THE PIP INSTALLER](https://github.com/cameronezzi/KML-to-Layer-Post-Process/blob/master/docs_images/bs4_install.md#step-4---install-beautiful-soup)
+- [Step 1 - DOWNLOAD THE PIP INSTALLER](https://github.com/cameronezzi/KML-to-Layer-Post-Process/blob/master/docs_images/bs4_install.md#step-1---download-the-pip-installer)
 - [Step 2 - INSTALL PIP](https://github.com/cameronezzi/KML-to-Layer-Post-Process/blob/master/docs_images/bs4_install.md#step-2---install-pip)
 - [Step 3  - SET PYTHON ENVIRONMENT VARIABLES (Optional)](https://github.com/cameronezzi/KML-to-Layer-Post-Process/blob/master/docs_images/bs4_install.md#step-3---set-python-environment-variables)
 - [Step 4 - INSTALL BEAUTIFUL SOUP](https://github.com/cameronezzi/KML-to-Layer-Post-Process/blob/master/docs_images/bs4_install.md#step-3---install-beautiful-soup)
