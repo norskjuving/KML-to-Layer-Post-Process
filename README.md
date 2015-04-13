@@ -1,7 +1,7 @@
 
 # KML-to-Layer-Post-Process
 
-[How To](https://github.com/cameronezzi/KML-to-Layer-Post-Process#how-to) | [Results]
+[How To](https://github.com/cameronezzi/KML-to-Layer-Post-Process#how-to) | [Results](https://github.com/cameronezzi/KML-to-Layer-Post-Process/blob/master/README.md#result-of-kml-to-layer-post-processing-vs-kml-to-layer)
 
 ArcPy script to process feature class attribute fields containing HTML.
 
@@ -33,13 +33,13 @@ Alternatively, if you do not have Beautiful Soup 4 installed on your machine I w
 
 ### Result of KML to Layer Post Processing vs KML to Layer
 
-#### KML to Layer
+#### *KML to Layer*
 
 ![Screenshot result of KML to Layer](/../master/docs_images/result_old.png?raw=true)
 
 The result of the 'KML to Layer' tool contains all attribute information in a field called 'PopupInfo' and appears as an embedded HTML table. This is actually HTML markup contained in a text field. The user has no access to the attribute information when it is stored in this format. Additionally, there is only 1 attribute being displayed in this HTML table, where the highlighted feature has 3 attributes in reality. The 'KML to Layer' tool has generated 3 stacked polygons each containing a separate attribute in HTML format. (Note in the lower left corner of the Popup window we are viewing '1 of 3' stacked polygons).
 
-#### KML to Layer Post Processing
+#### *KML to Layer Post Processing*
 
 ![Screenshot result of KML to Layer](/../master/docs_images/result_new.png?raw=true)
 
