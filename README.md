@@ -41,6 +41,8 @@ The result of the 'KML to Layer' tool contains all attribute information in a fi
 ![Screenshot result of KML to Layer](/../master/docs_images/result_new.png?raw=true)
 
 The result of the 'KML to Layer Post Processing' tool dissolves the stacked geometries into a single geometry and then pulls the attribute information out of the 'PopupInfo' fields HTML markup using the BeautifulSoup 4 python library which is designed for HTML/XML parsing . The result as seen in the above image leaves us with a single geometry containing individual attribute fields and values.
+
+[Top of Page](https://github.com/cameronezzi/KML-to-Layer-Post-Process)
  
 
 
