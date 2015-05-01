@@ -1,3 +1,4 @@
+**_\*Disclaimer:_** *In its current state, this tool will only work with a KML that has HTML contained in the PopupInfo field formatted the same as the 'Test.kml' provided. To easily view the format of the HTML, run the default 'KML to Layer' tool in ArcMap and copy the HTML from the PopupInfo field into a text editor. If your KML differs from this format the tools source code will need to be modified. This tool is meant to provide sample logic only.*
 
 # KML-to-Layer-Post-Process
 
